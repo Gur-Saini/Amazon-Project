@@ -1,0 +1,17 @@
+<div class="card mb-4">
+  <img [src]="product.imageUrl" class="card-img-top product-image" alt="{{product.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">{{product.description}}</p>
+    <p>${{product.price}}</p>
+    <p>Rating: {{product.rating}}</p>
+    <div class="form-group">
+      <label for="quantity">Quantity:</label>
+      <select class="form-control" [(ngModel)]="quantity" name="quantity">
+        <option *ngFor="let qty of quantities" [value]="qty">{{qty}}</option>
+      </select>
+    </div>
+    <hr>
+    <button class="btn-add-to-cart" (click)="addToCart()">Add to Cart</button>
+  </div>
+</div>

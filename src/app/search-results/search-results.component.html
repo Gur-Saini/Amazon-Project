@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Search Results for "{{ searchTerm }}"</h2>
+    <div *ngIf="searchResults.length === 0">
+      <p>No products found.</p>
+    </div>
+    <div *ngIf="searchResults.length > 0">
+      <div class="row">
+        <app-product-item *ngFor="let product of searchResults" [product]="product" class="col-md-4"></app-product-item>
+      </div>
+    </div>
+  </div>
+  

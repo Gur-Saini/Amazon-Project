@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Checkout ({{ items.length }} items)</h2>
+  <div class="row" *ngFor="let item of items">
+    <div class="col-md-8">
+      <img [src]="item.product.imageUrl" alt="{{ item.product.name }}" class="img-thumbnail">
+      <p>{{ item.product.name }} x {{ item.quantity }}</p>
+      <p>{{ item.product.description }}</p>
+    </div>
+    <div class="col-md-4 text-right">
+      <p>${{ item.product.price * item.quantity }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8"></div>
+    <div class="col-md-4 text-right">
+      <p><strong>Order Total: ${{ getTotal() }}</strong></p>
+    </div>
+  </div>
+  <button (click)="placeOrder()" class="btn btn-success">Place Order</button>
+</div>

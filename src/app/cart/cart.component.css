@@ -1,0 +1,26 @@
+.cart {
+  padding: 16px;
+}
+
+.cart .card {
+  margin-bottom: 20px;
+}
+
+.cart .img-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.cart .form-check-label {
+  margin-left: 5px;
+}
+
+.cart .form-check {
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

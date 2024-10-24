@@ -1,0 +1,39 @@
+.navbar {
+    padding: 10px;
+  }
+  
+  .navbar-brand img {
+    height: 30px;
+  }
+  
+  .search-form {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    border: 2px solid #f0c14b;
+    border-right: none;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    color: #111;
+  }
+  
+  .search-button {
+    background-color: #f0c14b;
+    border: 2px solid #f0c14b;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    margin-left: 20px;
+  }
+  
